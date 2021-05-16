@@ -5,11 +5,15 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "postinstall": "npx cpy-cli ./node_modules/@fontsource/inter/files/inter-latin-variable-wghtOnly-normal.woff2 ./public/fonts/"
   },
   "dependencies": {
+    "@fontsource/inter": "^4.3.0",
+    "@twind/next": "^1.0.7",
     "next": "10.2.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "twind": "^0.16.15"
   }
 }
