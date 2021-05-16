@@ -18,6 +18,12 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
+## Styling
+
+Styling is done using `twind`. Just use the same syntax as Tailwind. Docs found [here](https://tailwindcss.com/docs).
+
+This allows you to quickly write CSS without writing any CSS. Want something to be 30 pixels wide? Just add `.w-[30px]`.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
