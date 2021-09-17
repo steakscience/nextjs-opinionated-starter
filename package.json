@@ -1,5 +1,5 @@
 {
-  "name": "kuriboh",
+  "name": "opinionated-nextjs-starter",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,9 +11,9 @@
   "dependencies": {
     "@fontsource/inter": "^4.3.0",
     "@twind/next": "^1.0.7",
-    "next": "10.2.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "next": "^11.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "twind": "^0.16.15"
   }
 }
