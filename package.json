@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "lint": "next lint",
     "postinstall": "npx cpy-cli ./node_modules/@fontsource/inter/files/inter-latin-variable-wghtOnly-normal.woff2 ./public/fonts/"
   },
   "dependencies": {
@@ -15,5 +16,9 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "twind": "^0.16.15"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2"
   }
 }
