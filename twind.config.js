@@ -1,7 +1,24 @@
-/** @type {import('twind').Configuration} */
+/* eslint-disable import/no-anonymous-default-export */
 
 export default {
   theme: {
+    extend: {
+      colors: {
+        background: {
+          app: "var(--color-app)",
+          DEFAULT: "var(--color-background)",
+          darker: "var(--color-background-darker)",
+        },
+        body: "var(--color-body)",
+        primary: "var(--color-primary)",
+        placeholder: "var(--color-placeholder)",
+        border: "var(--color-border)",
+      },
+      screens: {
+        "3xl": "1800px",
+        950: "950px",
+      },
+    },
     fontSize: {
       "2xs": [
         "0.5rem",
