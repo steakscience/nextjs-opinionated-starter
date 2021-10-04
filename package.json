@@ -7,10 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "npx cpy-cli ./node_modules/@fontsource/inter/files/inter-latin-variable-wghtOnly-normal.woff2 ./public/fonts/"
+    "copy_fonts": "cp ./node_modules/inter-ui/Inter\\ \\(web\\)/Inter.var.woff2 ./public/fonts/",
+    "postinstall": "npm run copy_fonts"
   },
   "dependencies": {
-    "@fontsource/inter": "^4.3.0",
     "@twind/next": "^1.0.7",
     "next": "^11.1.2",
     "react": "^17.0.2",
@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2"
+    "eslint-config-next": "11.1.2",
+    "inter-ui": "^3.19.3"
   }
 }
