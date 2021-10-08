@@ -12,15 +12,14 @@
   },
   "dependencies": {
     "@steakscience/matte": "^1.0.0",
-    "@twind/next": "^1.0.7",
     "next": "^11.1.2",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "twind": "^0.16.15"
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
-    "inter-ui": "^3.19.3"
+    "inter-ui": "^3.19.3",
+    "windicss-webpack-plugin": "^1.4.8"
   }
 }

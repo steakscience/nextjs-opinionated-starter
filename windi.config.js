@@ -1,6 +1,6 @@
-/* eslint-disable import/no-anonymous-default-export */
+import { defineConfig } from 'windicss/helpers'
 
-export default {
+export default defineConfig({
   theme: {
     extend: {
       colors: {
@@ -85,5 +85,8 @@ export default {
       sans: ["InterVariable", "Inter", "sans-serif"],
     },
   },
-  plugins: {},
-};
+  extract: {
+    include: ['**/*.{js,jsx,css}'],
+    exclude: ['node_modules', '.git', '.next/**/*'],
+  },
+});
