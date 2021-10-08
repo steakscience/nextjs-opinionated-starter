@@ -1,5 +1,5 @@
-import 'windi.css';
 import "@steakscience/matte";
+import 'windi.css';
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {

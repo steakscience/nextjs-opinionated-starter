@@ -1,18 +1,34 @@
-import { defineConfig } from 'windicss/helpers'
+import { defineConfig } from 'windicss/helpers';
+
+const variable = variableName => {
+  let fullVariable = `var(--${variableName})`;
+
+  return ({ opacityVariable, opacityValue }) => {
+    if (opacityValue !== undefined) {
+      return `rgba(${fullVariable}, ${opacityValue})`;
+    }
+
+    if (opacityVariable !== undefined) {
+      return `rgba(${fullVariable}, var(${opacityVariable}, 1))`;
+    }
+
+    return fullVariable;
+  };
+};
 
 export default defineConfig({
   theme: {
     extend: {
       colors: {
         background: {
-          app: "var(--color-app)",
-          DEFAULT: "var(--color-background)",
-          darker: "var(--color-background-darker)",
+          app: variable("color-app"),
+          DEFAULT: variable("color-background"),
+          darker: variable("color-background-darker"),
         },
-        body: "var(--color-body)",
-        primary: "var(--color-primary)",
-        placeholder: "var(--color-placeholder)",
-        border: "var(--color-border)",
+        body: variable("color-body"),
+        primary: variable("color-primary"),
+        placeholder: variable("color-placeholder"),
+        border: variable("color-border"),
       },
       screens: {
         "3xl": "1800px",
