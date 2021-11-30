@@ -7,8 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "copy_fonts": "cp ./node_modules/inter-ui/Inter\\ \\(web\\)/Inter.var.woff2 ./public/fonts/",
-    "postinstall": "npm run copy_fonts"
+    "fetch_inter": "curl https://rsms.me/inter/font-files/Inter.var.woff2 --output ./public/fonts/Inter.var.woff2",
+    "fetch_interdisplay": "curl https://rsms.me/inter/font-files/InterDisplay-roman.var.woff2 --output ./public/fonts/InterDisplay.var.woff2",
+    "postinstall": "npm run fetch_inter && fetch_interdisplay"
   },
   "dependencies": {
     "@steakscience/matte": "^1.0.1",
