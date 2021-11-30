@@ -6,6 +6,15 @@
   src: url("/fonts/Inter.var.woff2") format("woff2"),
     url("/fonts/Inter.var.woff2") format("woff2-variations");
 }
+/* https://rsms.me/inter/inter-display.css */
+@font-face {
+  font-family: "InterDisplayVariable";
+  font-style: normal;
+  font-weight: 100 900;
+  font-named-instance: "Regular";
+  font-display: swap;
+  src: url("/fonts/InterDisplay.var.woff2") format("woff2");
+}
 
 body {
   font-family: 'InterVariable', Inter, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
